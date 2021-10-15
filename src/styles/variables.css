@@ -1,0 +1,33 @@
+:root {
+  font-size: 16px;
+
+  /* Typefaces */
+  --typeface-title: 'Itim', cursive;
+  --typeface-body: 'Nunito', sans-serif;
+
+  /*
+    Colors - https://coolors.co/3d5a80-98c1d9-e0fbfc-ee6c4d-293241
+  */
+  --bdazzled-blue: hsla(214, 35%, 37%, 1);
+  --pale-cerulean: hsla(202, 46%, 72%, 1);
+  --light-cyan: hsla(182, 82%, 93%, 1);
+  --burnt-sienna: hsla(12, 83%, 62%, 1);
+  --gunmetal: hsla(218, 23%, 21%, 1);
+
+  /* Breakpoints */
+  
+
+  /* Spacing */
+
+}
+
+/* Modes */
+.light {
+  --background-color: var(--light-cyan);
+  --text-color: var(--gunmetal);
+}
+
+.dark {
+  --background-color: var(--gunmetal);
+  --text-color: var(--light-cyan);
+}
