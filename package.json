@@ -8,8 +8,7 @@
   "scripts": {
     "clean": "rm dist/*",
     "start": "parcel src/index.html",
-    "build-prod": "parcel build src/index.html",
-    "serve-prod": "parcel serve dist/index.html"
+    "build-prod": "parcel build src/index.html"
   },
   "dependencies": {
     "next": "^11.1.2",
