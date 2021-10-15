@@ -3,7 +3,7 @@ interface Props {
 }
 
 const App = ({ name }: Props) => (
-  <article>
+  <article className="container">
     <time dateTime="2021-07-06T15:37:40.623Z">July 06, 2021</time>
     <h1>The New Company Transition Trap</h1>
     <p>Some things that happen on your new team when you're insistent in bringing up the past, and ways to avoid them.</p>

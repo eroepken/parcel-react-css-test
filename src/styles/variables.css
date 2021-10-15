@@ -15,11 +15,11 @@
   --gunmetal: hsla(218, 23%, 21%, 1);
 
   /* Breakpoints */
-  --sm: '640px';
-  --md: '768px';
-  --lg: '1024px';
-  --xl: '1280px';
-  --xxl: '1536px';
+  --sm: 640px;
+  --md: 768px;
+  --lg: 1024px;
+  --xl: 1280px;
+  --xxl: 1536px;
 
   /* Spacing */
   --s-px: 1px;
@@ -100,6 +100,35 @@
   --leading-8: 2rem;
   --leading-9: 2.25rem;
   --leading-10: 2.5rem;
+
+  /* Container Max Width - Default */
+  --container-max-width: 100%;
+}
+/* Container Max Width - Responsive */
+@media screen and (min-width: 640px) {
+  :root {
+    --container-max-width: var(--sm);
+  }
+}
+@media screen and (min-width: 768px) {
+  :root {
+    --container-max-width: var(--md);
+  }
+}
+@media screen and (min-width: 1024px) {
+  :root {
+    --container-max-width: var(--lg);
+  }
+}
+@media screen and (min-width: 1280px) {
+  :root {
+    --container-max-width: var(--xl);
+  }
+}
+@media screen and (min-width: 1536px) {
+  :root {
+    --container-max-width: var(--xxl);
+  }
 }
 
 /* Automatic Modes */

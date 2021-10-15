@@ -6,7 +6,8 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
   font-family: var(--typeface-body);
-  padding: var(--s-4);
+  line-height: var(--leading-normal);
+  padding: var(--s-10) 0;
 }
 
 h1, h2, h3, h4, h5, h6, [class*="header"] {
@@ -14,9 +15,16 @@ h1, h2, h3, h4, h5, h6, [class*="header"] {
 }
 
 a {
+  display: inline-block;
   color: var(--link-color);
   font-weight: var(--fw-bold);
   text-decoration: none;
-  border-bottom: var(--s-1) solid var(--link-color);
-  line-height: var(--leading-2);
+  border-bottom: var(--s-1) ridge var(--link-color);
+  line-height: var(--leading-4);
+}
+
+.container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 var(--s-4);
 }
