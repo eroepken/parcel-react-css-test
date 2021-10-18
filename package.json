@@ -8,7 +8,8 @@
   "scripts": {
     "clean": "rm dist/*",
     "start": "parcel src/index.html",
-    "build-prod": "parcel build src/index.html"
+    "build-prod": "parcel build src/index.html",
+    "lint": "stylelint src/**/*.css"
   },
   "dependencies": {
     "next": "^11.1.2",
@@ -25,7 +26,10 @@
     "autoprefixer": "^10.3.7",
     "parcel": "^2.0.0",
     "postcss-modules": "^4.2.2",
-    "prettier": "^2.4.1"
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.4.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^22.0.0"
   },
   "browserslist": [
     "defaults",

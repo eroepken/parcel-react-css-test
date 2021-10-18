@@ -1,3 +1,12 @@
+@custom-media --screen-sm (min-width: var(--sm));
+@custom-media --screen-md (min-width: var(--md));
+@custom-media --screen-lg (min-width: var(--lg));
+@custom-media --screen-xl (min-width: var(--xl));
+@custom-media --screen-xxl (min-width: var(--xxl));
+@custom-media --light-mode (prefers-color-scheme: light);
+@custom-media --dark-mode (prefers-color-scheme: dark);
+@custom-media --static (prefers-reduced-motion: reduce);
+
 :root {
   font-size: 16px;
 
@@ -23,7 +32,7 @@
 
   /* Spacing */
   --s-px: 1px;
-  --s-0: 0px;
+  --s-0: 0;
   --s-0-5: 0.125rem;
   --s-1: 0.25rem;
   --s-1-5: 0.375rem;
@@ -101,47 +110,37 @@
   --leading-9: 2.25rem;
   --leading-10: 2.5rem;
 
-  /* Container Max Width - Default */
+  /* Container Max Width */
   --container-max-width: 100%;
-}
-/* Container Max Width - Responsive */
-@media screen and (min-width: 640px) {
-  :root {
+
+  @media screen and (--screen-sm) {
     --container-max-width: var(--sm);
   }
-}
-@media screen and (min-width: 768px) {
-  :root {
+
+  @media screen and (--screen-md) {
     --container-max-width: var(--md);
   }
-}
-@media screen and (min-width: 1024px) {
-  :root {
+
+  @media screen and (--screen-lg) {
     --container-max-width: var(--lg);
   }
-}
-@media screen and (min-width: 1280px) {
-  :root {
+
+  @media screen and (--screen-xl) {
     --container-max-width: var(--xl);
   }
-}
-@media screen and (min-width: 1536px) {
-  :root {
+
+  @media screen and (--screen-xxl) {
     --container-max-width: var(--xxl);
   }
-}
 
-/* Automatic Modes */
-@media screen and (prefers-color-scheme: light) {
-  :root {
+  /* Automatic Modes */
+  @media screen and (--light-mode) {
     --background-color: var(--light-cyan);
     --text-color: var(--gunmetal);
     --link-color: var(--bdazzled-blue);
   }
-}
 
-@media screen and (prefers-color-scheme: dark) {
-  :root {
+  @media screen and (--dark-mode) {
     --background-color: var(--gunmetal);
     --text-color: var(--light-cyan);
     --link-color: var(--pale-cerulean);

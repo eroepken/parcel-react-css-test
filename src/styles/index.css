@@ -10,7 +10,13 @@ body {
   padding: var(--s-10) 0;
 }
 
-h1, h2, h3, h4, h5, h6, [class*="header"] {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+[class*="header"] {
   font-family: var(--typeface-header);
 }
 
